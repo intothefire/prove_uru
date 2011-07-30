@@ -10,7 +10,6 @@ class ProveUru::ProfileList
     
     response = response.to_hash
     response[:get_profiles_response][:get_profiles_result][:uru_profile5].each do |p|
-      puts p
       list << ::ProveUru::Profile.new(p)
     end
 

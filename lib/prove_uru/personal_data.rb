@@ -1,5 +1,5 @@
 class ProveUru::PersonalData
-  attr_accessor :title, :forename :middlename, :surname, :gender, :dob, :email
+  attr_accessor :title, :forename, :middlename, :surname, :gender, :dob, :email
   
   def to_prove_hash
     {

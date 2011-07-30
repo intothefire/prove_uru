@@ -9,11 +9,15 @@ require 'savon'
 
 
 module ProveUru
+  autoload :Authenticate,            'prove_uru/authenticate'
+  autoload :AuthenticationResult,            'prove_uru/authentication_result'
   autoload :ProfileList,            'prove_uru/profile_list'
   autoload :Profile,                'prove_uru/profile'
   autoload :FreeAddress,            'prove_uru/free_address'
   autoload :FixedAddress,           'prove_uru/fixed_address'
-  autoload :
+  autoload :UkData,           'prove_uru/uk_data'
+  autoload :UkAddress,           'prove_uru/uk_address'
+  autoload :PersonalData,           'prove_uru/personal_data'
   
   XML_NAMESPACE = "https://www.prove-uru.co.uk/"
   TEST_BASE_URL = "https://pilot.prove-uru.co.uk:8443/"

@@ -6,7 +6,8 @@ class ProveUru::Authenticate
       soap.body = ProveUru.merge_prove_password_hash({
         "ProfileId" => profile_id,
         "UserData" => {
-          "Basic" => user_data.to_prove_hash()
+          "Basic" => user_data.to_prove_hash,
+          "UKData" => uk_data.to_prove_hash
         }
       })
     end
@@ -14,10 +15,11 @@ class ProveUru::Authenticate
     list = Array.new
     
     response = response.to_hash
-    response[:get_profiles_response][:get_profiles_result][:uru_profile5].each do |p|
-      puts p
-      list << ::ProveUru::Profile.new(p)
-    end
+    #   :authenticate_by_profile_response=>{
+    #     :authenticate_by_profile_result
+    response[:authenticate_by_profile_response][:authenticate_by_profile_result].each do |auth|
+       list << ::ProveUru::AuthenticationResult.new(auth)
+     end
 
     list
   end

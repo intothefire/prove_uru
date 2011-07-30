@@ -3,15 +3,14 @@ class ProveUru::FreeAddress
   
   def to_prove_hash
     {
-      "Line1" => :line_1,
-      "Line2" => :line_2,
-      "Line3" => :line_3,
-      "Line4" => :line_4,
-      "Line5" => :line_5,
-      "Line6" => :line_6,
-      "Line7" => :line_7,
-      "Line8" => :line_8,
-      "Line9" => :line_9
+      "Line1" => self.line_1,
+      "Line2" => self.line_2,
+      "Line3" => self.line_3,
+      "Line4" => self.line_4,
+      "Line5" => self.line_5,
+      "Line6" => self.line_6,
+      "Line7" => self.line_7,
+      "Line8" => self.line_8
     }
   end
   
