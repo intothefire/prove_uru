@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
     "lib/prove_uru/uk_address.rb",
     "lib/prove_uru/uk_data.rb",
     "lib/prove_uru/version.rb",
+    "prove_uru.gemspec",
     "test/helper.rb",
     "test/test_prove_uru.rb"
   ]
