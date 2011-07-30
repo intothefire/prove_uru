@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "prove_uru"
   gem.homepage = "http://github.com/intothefire/prove_uru"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{ProveURU Gem}
+  gem.description = %Q{ProveURU Gem}
   gem.email = "chris@norman.me"
   gem.authors = ["Chris Norman"]
   # dependencies defined in Gemfile
