@@ -9,15 +9,11 @@ class ProveUru::AuthenticationResult
   ATTRIBUTES.each do |attr|
     attr_accessor attr
   end
-  DEFAULTS = {
-  }.freeze
    
   def initialize(args = nil)
-    args = args ? DEFAULTS.merge(args) : DEFAULTS
-
-    ATTRIBUTES.each do |attr|
-      if (args.key?(attr))
-        instance_variable_set("@#{attr}", args[attr])
+    ATTRIBUTES.each do |a|
+      if (args.key?(a))
+        instance_variable_set("@#{a}", args[a])
       end
     end
   end

@@ -12,15 +12,7 @@ class ProveUru::Authenticate
       })
     end
     
-    list = Array.new
-    
     response = response.to_hash
-    #   :authenticate_by_profile_response=>{
-    #     :authenticate_by_profile_result
-    response[:authenticate_by_profile_response][:authenticate_by_profile_result].each do |auth|
-       list << ::ProveUru::AuthenticationResult.new(auth)
-     end
-
-    list
+    ::ProveUru::AuthenticationResult.new(response[:authenticate_by_profile_response][:authenticate_by_profile_result])
   end
 end
