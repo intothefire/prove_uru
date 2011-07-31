@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{prove_uru}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Chris Norman}]
-  s.date = %q{2011-07-30}
+  s.date = %q{2011-07-31}
   s.description = %q{ProveURU Gem}
   s.email = %q{chris@norman.me}
   s.extra_rdoc_files = [
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/prove_uru.rb",
     "lib/prove_uru/authenticate.rb",
+    "lib/prove_uru/authentication_result.rb",
     "lib/prove_uru/fixed_address.rb",
     "lib/prove_uru/free_address.rb",
     "lib/prove_uru/personal_data.rb",
